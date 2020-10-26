@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:10px;
+}
+
+table{
+    border:1px solid rgb(85, 85, 85,0.2);
+    margin-top: 100px;
+    margin-bottom:50px;
+    margin-left:50px;
+    padding:25px 15px;
+}
+
+tr{
+    display:flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+th{
+    font-weight: 300;
+    font-size:2.3rem;
+}
+
+th,td{
+    margin-right:30px;
+    width:200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    margin-top:15px;
+    padding:8px 0px;
+    font-size:1.7rem;
+    
+}
+
+.icons i{
+    font-size:2.5rem;
+}
+
+.deleteItem{
+    color:rgb(194, 0, 0);
+    cursor: pointer;
+}
+
+#username{
+    font-size:3rem;
+    position: absolute;
+    font-weight: 300;
+    top:20px;
+    right:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+#username i {
+    font-size:4rem;
+    margin-right:10px;
+
+}
+
+#deleteConfirmBox{
+    display: none;
+    position: absolute;
+    top:0px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top:0px;
+    box-sizing: border-box;
+    transition: background-color 0.3s,padding 0.5s;
+}
+
+#deleteConfirmBox > div{
+    
+    width:440px;
+    margin:auto;
+    background-color: white;
+    border-radius: 5px;
+    border:1px solid slategray;
+}
+
+#deleteConfirmBox > div p{
+    padding:25px;
+    box-sizing: border-box;
+    font-size:1.6rem;
+    color:rgb(70, 70, 70);
+    width:100%;
+}
+
+#deleteConfirmBox > div div{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+#deleteConfirmBox > div div button{
+    color:white;
+    font-size: 1.5rem;
+    border:none;
+    margin-left:10px;
+    padding:10px 25px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+
+
+#deleteConfirmBox > div div #cancelButton{
+    background-color: #dc3545;
+}
+
+#deleteConfirmBox > div div #cancelButton:hover{
+    background-color: rgb(184, 54, 67);
+}
+
+#deleteConfirmBox > div div #deleteButton,#deleteConfirmBox > div div #cancelButton{
+    outline: none;;
+}
+
+
+#deleteConfirmBox > div div #deleteButton{
+    background-color: #28a745;
+}
+
+#deleteConfirmBox > div div #deleteButton:hover{
+    background-color: #2f9246;
+}

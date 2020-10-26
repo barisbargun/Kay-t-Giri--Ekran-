@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel = "stylesheet" type ="text/css" href = "style.css">
+
+        <meta charset = "utf-8">
+        
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+       
+
+        
+
+        <div id = "registerFormContainer">
+
+            <div id = "ekranYazisi">
+                <h1 id = "kayitEkrani">Kayıt Ekranı </h1>
+                <h1 id = "girisEkrani">Giriş Ekranı </h1>
+            </div>
+
+            <div id = "formContainer">
+
+            <div id = "buttons">
+                <div id = "loginButton">Giriş Yap</div>
+                <div id = "signUpButton">Kayıt Ol</div>
+            </div>
+
+            <div id = "form">
+                <div id = "formForm">
+                    <div id = "signUpForm">
+                        <div class = "forms">
+                            <label for = "nameSurname">Adınız ve Soyadınız :</label>
+                            <input type = "text" id = "nameSurname" name = "nameSurname" placeholder="Lütfen adınızı ve soyadınızı giriniz.">
+                            <h3 id = "nameSurnameError" class = "errorCode"></h3>
+                        </div>
+
+                        <div class = "forms">
+                            <label for = "age">Yaşınız :</label>
+                            <input type = "number" id = "age" name = "age" placeholder="Lütfen yaşınızı giriniz">
+                            <h3 id = "ageError" class = "errorCode"></h3>
+                        </div>
+
+                        <div class = "forms">
+                            <label for = "signUserName">Kullanıcı Adınız :</label>
+                            <input type = "text" id = "signUserName" name = "signUserName" placeholder="Lütfen kullanıcı adınızı giriniz.">
+                            <h3 id = "signUserNameError" class = "errorCode"></h3>
+                        </div>
+
+                        <div class = "forms">
+                            <label for = "signPassword">Şifreniz :</label>
+                            <input type = "password" id = "signPassword" name = "signPassword" placeholder="Lütfen şifrenizi giriniz.">
+                            <h3 id = "signPasswordError" class = "errorCode"></h3>
+                        </div>
+
+                        <input id = "signUpFormButton" type = "button" value = "Tamamla!">
+
+                        
+                    </div>
+
+                    <div id = "loginForm">
+                        <div class = "forms">
+                            <label for = "loginUserName">Kullanıcı Adınız :</label>
+                            <input type = "text" id = "loginUserName" name = "loginUserName" placeholder = "Lütfen kullanıcı adınızı giriniz.">
+                            <h3 id = "loginUserNameError" class = "errorCode"></h3>
+                        </div>
+
+                        <div class = "forms">
+                            <label for = "loginPassword">Şifreniz :</label>
+                            <input type = "password" id = "loginPassword" name = "loginPassword" placeholder="Lütfen şifrenizi giriniz.">
+                            <h3 id = "loginPasswordError" class = "errorCode"></h3>
+                        </div>
+                        
+                        <div id = "recaptchaForm" class = "forms">
+                            <div id = "recaptchaBox" data-callback="recaptcha_callback" class="g-recaptcha" data-sitekey="6LcehdAZAAAAALCdqmniLp1j2olYwY0B6_3b7RS5"></div>
+
+                            <h3 id = "recaptchaError" class = "errorCode"></h3>
+                        </div>
+
+                        
+
+                        <input id = "loginFormButton" type = "button" value = "Giriş Yap">
+                    </div>
+
+                    <div id = "cngrtScreen">
+                        <h3>Tebrikler!</h3>
+                        <p>Başarıyla Kayıt Oldunuz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <script src = "jquery-3.5.1.min.js"></script>
+        <script src = "script.js"></script>
+        
+    </body>
+
+</html>

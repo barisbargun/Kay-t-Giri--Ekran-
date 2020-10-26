@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:10px;
+}
+
+
+#registerFormContainer{
+    max-width:800px;
+    margin:auto;
+    margin-top:100px;
+}
+
+#registerFormContainer #formContainer{
+    
+    width:100%;
+    position: relative;
+    height: 560px;
+    align-items: center;
+    
+}
+
+#registerFormContainer div#ekranYazisi{
+    position: absolute;
+    top:25px;
+    left:10%;
+    color:rgb(85, 85, 85);
+    display:flex;
+    width:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:65px;
+    overflow: hidden;
+}
+
+#registerFormContainer div#ekranYazisi h1{
+    font-size:5rem;
+    position:absolute;
+    margin-bottom:5px;
+    
+}
+
+#registerFormContainer div#ekranYazisi h1:first-child{
+    left:0;
+}
+
+#registerFormContainer div#ekranYazisi h1:last-child{
+    left:100%;
+    width:300px;
+}
+
+#registerFormContainer div#ekranYazisi:after{
+    position: absolute;
+    content:"";
+    width:80%;
+    height:4px;
+    background-color:rgb(85, 85, 85);
+    bottom:0;
+    left:0;
+}
+
+#registerFormContainer #buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left:0;
+    height:100%;
+}
+
+#registerFormContainer #buttons div{
+    z-index: 5;
+    width:60px;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height:160px;
+    border-radius: 5px;
+    font-size:2rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s, text-shadow 0.3s;
+}
+
+#registerFormContainer #buttons div:nth-child(1){
+    background-color:#1877f2;
+}
+
+#registerFormContainer #buttons div:nth-child(2){
+    background-color:#42b72a;
+}
+
+
+#registerFormContainer #buttons div:nth-child(1):hover{
+    box-shadow:0px 0px 3px #1877f2;
+    text-shadow:0px 0px 1px white;
+}
+
+#registerFormContainer #buttons div:nth-child(2):hover{
+    box-shadow:0px 0px 3px #42b72a;
+    text-shadow:0px 0px 1px white;
+}
+
+
+
+
+
+#registerFormContainer #form{
+    width:85%;
+    padding:0px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgb(85, 85, 85,0.2);;
+    border-radius: 5px;
+    position: absolute;
+    right:0;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerFormContainer #formForm{
+    position: relative;
+    height:100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#registerFormContainer #formForm #loginForm{
+    left:125%; 
+}
+
+#form #formForm> div{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+#registerFormContainer #form > div .forms{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    position: relative;
+    align-items: center;
+}
+
+#registerFormContainer #form > div .forms label{
+    font-size:1.6rem;
+    margin-bottom:8px;
+    width:100%;
+}
+
+#registerFormContainer #form > div .forms input{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    font-size:1.6rem;
+    border:2px solid rgb(85, 85, 85,0.1);
+    border-radius: 5px;
+    color:rgb(46, 46, 46);
+}
+
+#registerFormContainer #form > div input:focus{
+    outline: none;
+}
+
+#registerFormContainer #form #signUpForm input:focus{
+    border-color: #42b72a;
+}
+
+#registerFormContainer #form #loginForm input:focus{
+    border-color: #1877f2;
+}
+
+#registerFormContainer #form > div input[type="button"]{
+    font-size: 2rem;
+    border:none;
+    padding:15px 40px;
+    color:white;
+    margin:auto;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#registerFormContainer #form #signUpForm input[type="button"]{
+    background-color: #42b72a;
+}
+
+#registerFormContainer #form #loginForm input[type="button"]{
+    background-color: #1877f2;
+}
+
+#registerFormContainer #form .errorCode{
+    position: absolute;
+    top:75px;
+    font-weight: 300;
+    background-color: #ffcfd4;
+    height:25px;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border:1px solid #ffafb7;
+    color:#b40012;
+    font-size:1.6rem;
+    visibility: hidden;
+    cursor: none;
+}
+
+#registerFormContainer #cngrtScreen{
+    position: absolute;
+    background-color: white;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    padding-top:120px;
+    flex-direction: column;    
+    box-sizing: border-box;
+    opacity:0;
+    visibility: hidden;
+}
+
+#registerFormContainer #cngrtScreen h3,#cngrtScreen p{
+    font-weight: 300;
+    font-size:2rem;
+    color:rgb(46, 46, 46);
+}
+
+#registerFormContainer #cngrtScreen h3 {
+    font-size:5rem;
+    font-weight: 300;
+}
+
+#registerFormContainer #recaptchaBox{
+    margin:auto;
+    display: none;
+}
+
+#registerFormContainer #recaptchaBox + .errorCode{
+    margin-top: 10px;
+}
